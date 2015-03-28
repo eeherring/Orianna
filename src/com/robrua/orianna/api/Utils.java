@@ -5,12 +5,12 @@ import java.util.List;
 
 public abstract class Utils {
     /**
-     * Breaks a list of IDs into smaller lists under the limited size
+     * Breaks a list of IDs into smaller lists under a given size
      *
      * @param <T>
      *            the type of the IDs
      * @param IDs
-     *            the IDs to split
+     *            the IDs to be split
      * @param limit
      *            the list size limit
      * @return the split lists
@@ -35,7 +35,7 @@ public abstract class Utils {
      *
      * @param vals
      *            the values to convert
-     * @return the result list
+     * @return the result list of values
      */
     public static List<Long> convert(final long... vals) {
         final List<Long> values = new ArrayList<>(vals.length);
@@ -47,7 +47,7 @@ public abstract class Utils {
     }
 
     /**
-     * Stringifies a list of IDs
+     * Makes a string of a list of IDs
      *
      * @param <T>
      *            the type of the IDs
