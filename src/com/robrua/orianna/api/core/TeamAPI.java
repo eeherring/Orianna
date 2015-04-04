@@ -17,7 +17,7 @@ import com.robrua.orianna.type.core.team.Team;
 public abstract class TeamAPI {
     /**
      * @param teamID
-     *            the ID of the team to get
+     *            the ID of the team to be retrieved
      * @return the team
      */
     public static Team getTeam(final String teamID) {
@@ -26,7 +26,7 @@ public abstract class TeamAPI {
 
     /**
      * @param teamIDs
-     *            the IDs of the teams to get
+     *            the IDs of the teams to be retrieved
      * @return the teams
      */
     public static List<Team> getTeams(final List<String> teamIDs) {
@@ -54,7 +54,7 @@ public abstract class TeamAPI {
 
     /**
      * @param teamIDs
-     *            the IDs of the teams to get
+     *            the IDs of the teams to be retrieved
      * @return the teams
      */
     public static List<Team> getTeams(final String... teamIDs) {
@@ -63,7 +63,7 @@ public abstract class TeamAPI {
 
     /**
      * @param summoners
-     *            the summoners to get teams for
+     *            the summoners (players) to get teams for
      * @return the summoners' teams
      */
     public static List<List<Team>> getTeamsBySummoner(final List<Summoner> summoners) {
@@ -77,7 +77,7 @@ public abstract class TeamAPI {
 
     /**
      * @param summoners
-     *            the summoners to get teams for
+     *            the summoners (players) to get teams for
      * @return the summoners' teams
      */
     public static List<List<Team>> getTeamsBySummoner(final Summoner... summoners) {
@@ -91,7 +91,7 @@ public abstract class TeamAPI {
 
     /**
      * @param summoner
-     *            the summoner to get teams for
+     *            the summoner (player) to get teams for
      * @return the summoners' teams
      */
     public static List<Team> getTeamsBySummoner(final Summoner summoner) {
@@ -100,7 +100,7 @@ public abstract class TeamAPI {
 
     /**
      * @param summonerIDs
-     *            the IDs of the summoners to get teams for
+     *            the IDs of the summoners (players) to get teams for
      * @return the summoners' teams
      */
     public static List<List<Team>> getTeamsBySummonerID(final List<Long> summonerIDs) {
@@ -131,7 +131,7 @@ public abstract class TeamAPI {
 
     /**
      * @param summonerIDs
-     *            the IDs of the summoners to get teams for
+     *            the IDs of the summoners (players) to get teams for
      * @return the summoners' teams
      */
     public static List<List<Team>> getTeamsBySummonerID(final long... summonerIDs) {
@@ -140,7 +140,7 @@ public abstract class TeamAPI {
 
     /**
      * @param summonerID
-     *            the ID of the summoner to get teams for
+     *            the ID of the summoner (player) to get teams for
      * @return the summoner's teams
      */
     public static List<Team> getTeamsBySummonerID(final long summonerID) {
@@ -149,7 +149,7 @@ public abstract class TeamAPI {
 
     /**
      * @param summonerNames
-     *            the names of the summoners to get teams for
+     *            the names of the summoners (players) to get teams for
      * @return the summoners' teams
      */
     public static List<List<Team>> getTeamsBySummonerName(final List<String> summonerNames) {
@@ -158,7 +158,7 @@ public abstract class TeamAPI {
 
     /**
      * @param summonerNames
-     *            the names of the summoners to get teams for
+     *            the names of the summoners (players) to get teams for
      * @return the summoners' teams
      */
     public static List<List<Team>> getTeamsBySummonerName(final String... summonerNames) {
@@ -167,7 +167,7 @@ public abstract class TeamAPI {
 
     /**
      * @param summonerName
-     *            the names of the summoner to get teams for
+     *            the names of the summoner (player) to get teams for
      * @return the summoner's teams
      */
     public static List<List<Team>> getTeamsBySummonerName(final String summonerName) {
