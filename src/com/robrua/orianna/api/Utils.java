@@ -5,7 +5,7 @@ import java.util.List;
 
 public abstract class Utils {
     /**
-     * Breaks a list of IDs into smaller lists under the limited size
+     * Breaks a list of IDs into smaller lists of a given size
      *
      * @param <T>
      *            the type of the IDs
@@ -35,7 +35,7 @@ public abstract class Utils {
      *
      * @param vals
      *            the values to convert
-     * @return the result list
+     * @return the result list with the converted values
      */
     public static List<Long> convert(final long... vals) {
         final List<Long> values = new ArrayList<>(vals.length);
@@ -47,7 +47,7 @@ public abstract class Utils {
     }
 
     /**
-     * Stringifies a list of IDs
+     * Creates a string from a list of IDs
      *
      * @param <T>
      *            the type of the IDs
